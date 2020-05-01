@@ -27,7 +27,7 @@ module.exports = merge(common, {
   },
 
   plugins: [
-    new CleanWebpackPlugin(["dist/**/*.js", "dist/**/*.css", "site/content/webpack.json"]),
+    new CleanWebpackPlugin(["dist/**/*.js", "dist/**/*.css", "site/data/webpack.json"]),
 
     new MiniCssExtractPlugin({
       filename: "[name].css",
