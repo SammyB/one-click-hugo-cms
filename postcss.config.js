@@ -6,9 +6,7 @@ module.exports = {
     require('postcss-preset-env')({
       browsers: "last 2 versions"
     }),
-    require('autoprefixer')({
-      browsers: 'last 2 versions',
-    }),
+    autoprefixer: {},
     require('cssnano')({
         preset: 'default',
     }),
