@@ -11,7 +11,8 @@ module.exports = {
 
   entry: {
     app: path.join(__dirname, "src", "scripts", "app.core.js"),
-    main: path.join(__dirname, "src", "index.js")
+    main: path.join(__dirname, "src", "index.js"),
+    cms: path.join(__dirname, "src", "js", "cms.js")
   },
 
   output: {
@@ -96,6 +97,11 @@ module.exports = {
       filename: "webpack.json",
       path: path.join(process.cwd(), "site/data"),
       prettyPrint: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'admin/index.html',
+      template: 'src/cms.html',
+      inject: false,
     }),
   ]
 };
