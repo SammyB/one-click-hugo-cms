@@ -12,8 +12,8 @@ module.exports = {
 
   entry: {
     app: path.join(__dirname, "src", "scripts", "app.core.js"),
-    main: path.join(__dirname, "src", "index.js"),
-    cms: path.join(__dirname, "src", "js", "cms.js")
+    cms: path.join(__dirname, "src", "scripts", "cms.js"),
+    main: path.join(__dirname, "src", "index.js")
   },
 
   output: {
@@ -79,26 +79,32 @@ module.exports = {
       },
 
       {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader'
-        }
-      }
+        loader: "babel-loader",
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        query: {cacheDirectory: true}
+      },
     ]
   },
   plugins: [
     //new CleanWebpackPlugin(['dist']),
-
-    new webpack.ProvidePlugin({
-      fetch: "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
-    }),
+    //
+    // new webpack.ProvidePlugin({
+    //   fetch: "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
+    // }),
 
     new AssetsPlugin({
       filename: "webpack.json",
       path: path.join(process.cwd(), "site/data"),
       prettyPrint: true
     }),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/fonts/",
+        to: "fonts/",
+        flatten: true
+      }
+    ]),
     new HtmlWebpackPlugin({
       filename: 'admin/index.html',
       template: 'src/cms.html',
