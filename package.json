@@ -1,5 +1,5 @@
 {
-  "name": "tris",
+  "name": "isobar-boilerplate-hugo-uikit",
   "version": "1.0.0",
   "description": "A webpack boilerplate for static websites that has all the necessary modern tools and optimizations built-in.",
   "private": true,
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrockwood/tris"
+    "url": "https://github.com/"
   },
   "keywords": [],
-  "author": "mrockwood",
+  "author": "sammyb",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",

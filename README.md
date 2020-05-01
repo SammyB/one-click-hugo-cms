@@ -4,7 +4,7 @@
 
 You need [git](https://git-scm.com/) and [node.js](https://nodejs.org/) on your computer before running.
 
-1. `git clone https://github.com/tr1s/tris-webpack-boilerplate.git your-project-name`
+1. `git clone ## path to git your-project-name`
 2. `cd your-project-name`
 3. `npm install`
 4. `npm start`
@@ -138,13 +138,13 @@ const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 
 plugins: [
   new HtmlWebpackPlugin({
-    title: 'tris-webpack-boilerplate',
+    title: 'isobar-webpack-boilerplate',
     filename: 'index.html',
     template: './src/index.html',
     inject: 'head'
   }),
   new HtmlWebpackPlugin({
-    title: 'tris-404-page',
+    title: '404-page',
     filename: '404.html',
     template: './src/404.html',
     inject: 'head'
@@ -459,7 +459,7 @@ ___
 
 ### Favicon generation
 
-This is a great plugin that generates every single icon you'll ever need based off one image source. In my `src/images/` folder I have a `tris-package.svg` that I input into the [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin).
+This is a great plugin that generates every single icon you'll ever need based off one image source. In my `src/images/` folder I have a `package.svg` that I input into the [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin).
 
 It will generate icons for apple, android, chrome, firefox, twitter, windows, you name it. It will generate each icon in all different sizes and import them directly into your website head where they belong. Twitter and windows are set to false but default, so I changed them to true just to cover all the bases just in-case.
 
@@ -474,7 +474,7 @@ module.exports = merge(common, {
   mode: 'production',
   plugins: [
     new FaviconsWebpackPlugin({
-      logo: './src/images/tris-package.svg',
+      logo: './src/images/package.svg',
       icons: {
         twitter: true,
         windows: true
@@ -548,10 +548,3 @@ externals: {
 <a name="contributing"/></a>
 ___
 
-# Contributing
-
-I try my best to explain things thoroughly, but if something can be explained more clearly, please feel free to send off a pull request with some suggested edits. Thank you!
-
-___
-
-Hope this helped! Follow me on [twitter](https://twitter.com/triscodes) if you're into that. 🌱
