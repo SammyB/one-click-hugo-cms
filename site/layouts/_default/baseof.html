@@ -3,9 +3,10 @@
   {{ partial "header" . }}
   <body class="sans-serif">
 
-    {{ block "head" . }}{{ partial "nav" . }}{{end}}
 
     <div class="uk-container">
+      {{ block "head" . }}{{ partial "nav" . }}{{end}}
+
       {{ block "main" . }}{{ end }}
     </div>
 

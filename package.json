@@ -86,7 +86,8 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "bulma": "^0.7.2",
-    "lazysizes": "^4.1.5"
+    "lazysizes": "^4.1.5",
+    "uikit": "^3.4.2"
   },
   "resolutions": {
     "natives": "1.1.6"
