@@ -3,6 +3,10 @@ title: tech
 date: 2018-11-15T02:02:50.000Z
 draft: false
 content: this is tech
+modules:
+  - type: module-1
+    title: Module 1
+    content: "# ***Module 1***"
 ---
 
 # [Victor Hugo](https://github.com/netlify-templates/victor-hugo)
