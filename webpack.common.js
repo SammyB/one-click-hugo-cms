@@ -11,7 +11,6 @@ module.exports = {
   mode: 'development',
 
   entry: {
-    app: path.join(__dirname, "src", "scripts", "app.core.js"),
     cms: path.join(__dirname, "src", "scripts", "cms.js"),
     main: path.join(__dirname, "src", "index.js")
   },
