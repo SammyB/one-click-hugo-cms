@@ -1,6 +1,6 @@
 ---
 title: testing
-content: Testing
+content: Testing 1
 modules:
   - type: module-1
     title: module 1
