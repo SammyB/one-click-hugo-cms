@@ -16,5 +16,24 @@ products:
 values:
     heading: Our values
     text: Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.
+modules:
+  - type: ourMembers
+    title: Our Members
+    content:
+        - logo: /img/about-shade-grown.jpg
+        - logo: /img/about-single-origin.jpg
+        - logo: /img/about-sustainable-farming.jpg
+  - type: ourBoard
+    title: Our Board
+    description: "We wish for mental health to be recognised as a boardroom issue and considered essential to maximise business performance, critical to managing business risk and vital to safeguarding organisations’ people responsibilities."
+    content:
+      - image: /img/about-shade-grown.jpg
+        name: "Sam Brunno"
+        title: "Job Title"
+      - image: /img/about-shade-grown.jpg
+        name: "Sam Brunno"
+        title: "Job Title"
+      - image: /img/about-shade-grown.jpg
+        name: "Sam Brunno"
+        title: "Job Title"
 ---
-
