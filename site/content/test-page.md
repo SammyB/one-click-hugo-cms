@@ -1,5 +1,5 @@
 ---
-title: Bobs page
+title: Test page
 content: testing
 modules:
   - type: accordion
