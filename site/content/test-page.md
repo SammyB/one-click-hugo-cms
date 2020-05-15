@@ -1,6 +1,6 @@
 ---
 title: Test page
-content: testing
+content: "***testing***"
 modules:
   - type: accordion
     name: test
