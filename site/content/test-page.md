@@ -1,15 +1,10 @@
 ---
 title: Bobs page
-content: oiajsfoiaj f
+content: testing
 modules:
-  - type: module-1
-    title: module 1 yeah
-    content: asdfasdfasdfasf
-  - type: module-2
-    title: asdf
-    subtitle: sdfsdf
-    content: asdfasdf
-  - type: module-1
-    title: oh yeah
-    content: asdfasdfdf
+  - type: accordion
+    name: test
+    subtitle: subtitle
+    description: This is a description
+    image: img/about-direct-sourcing.jpg
 ---
